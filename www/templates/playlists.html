@@ -1,0 +1,11 @@
+<ion-view view-title="Playlists">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="playlist in playlists"
+        href="#/app/playlists/{{playlist.id}}"
+        ion-track-tap="Select Playlist" ion-track-data="playlist">
+        {{playlist.title}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
